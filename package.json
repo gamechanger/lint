@@ -1,6 +1,6 @@
 {
     "name": "@gamechanger/eslint-plugin",
-    "version": "0.0.1",
+    "version": "0.0.0",
     "description": "GC Lint Rules for TS Projects",
     "author": "GameChanger",
     "homepage": "https://github.com/gamechanger/lint",
@@ -12,7 +12,6 @@
         "url": "https://github.com/gamechanger/lint/issues"
     },
     "main": "./index.js",
-    "private": true,
     "dependencies": {
         "@typescript-eslint/eslint-plugin": "5.10.0",
         "@typescript-eslint/parser": "5.10.0",
