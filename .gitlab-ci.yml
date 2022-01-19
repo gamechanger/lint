@@ -1,0 +1,11 @@
+stages:
+  - deploy
+
+publish:
+  stage: deploy
+  image: docker.gamechanger.io/node:16
+  script:
+    - echo '//registry.npmjs.org/:_authToken=${NPM_TOKEN}'>.npmrc
+    - npm publish
+  only:
+    - /^v\d+\.\d+\.\d+$/
