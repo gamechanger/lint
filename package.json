@@ -3,6 +3,7 @@
     "version": "0.0.2",
     "description": "GC Lint Rules for TS Projects",
     "author": "GameChanger",
+    "license": "MIT",
     "homepage": "https://github.com/gamechanger/lint",
     "repository": {
         "type": "git",
