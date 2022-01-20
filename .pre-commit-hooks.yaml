@@ -21,16 +21,22 @@
   entry: eslint
   args: [--fix, --cache, --ext, ".ts,.js", --no-ignore]
   types: [file]
-  files: \.(js|ts)$
+  files: .(js|ts)$
   additional_dependencies:
-    - "@typescript-eslint/eslint-plugin@5.10.0"
-    - "@typescript-eslint/parser@5.10.0"
-    - "eslint@8.7.0"
-    - "eslint-config-prettier@8.3.0"
-    - "eslint-plugin-es@4.1.0"
-    - "eslint-plugin-no-only-tests@2.6.0"
-    - "eslint-plugin-prettier@4.0.0"
-    - "eslint-plugin-simple-import-sort@7.0.0"
-    - "import-modules@2.1.0"
-    - "prettier@2.5.1"
-    - "typescript@4.5.4"
+    - "@typescript-eslint/eslint-plugin@5.10.0" # sync:package.json
+    - "@typescript-eslint/parser@5.10.0" # sync:package.json
+    - "eslint@8.7.0" # sync:package.json
+    - "eslint-config-prettier@8.3.0" # sync:package.json
+    - "eslint-plugin-es@4.1.0" # sync:package.json
+    - "eslint-plugin-no-only-tests@2.6.0" # sync:package.json
+    - "eslint-plugin-prettier@4.0.0" # sync:package.json
+    - "eslint-plugin-simple-import-sort@7.0.0" # sync:package.json
+    - "import-modules@2.1.0" # sync:package.json
+    - "prettier@2.5.1" # sync:package.json
+    - "typescript@4.5.4" # sync:package.json
+
+- id: sync_versions
+  name: sync versions of additional_dependencies in .pre-commit-hooks.yaml
+  language: script
+  entry: ./sync_versions.sh
+  files: ^package.json$
