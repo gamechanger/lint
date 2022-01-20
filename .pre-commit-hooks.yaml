@@ -1,0 +1,24 @@
+---
+
+- id: shfmt
+  name: shfmt
+  description: Shell source code formatter
+  language: golang
+  additional_dependencies:
+    - mvdan.cc/sh/v3/cmd/shfmt@v3.4.2
+  entry: shfmt
+  args:
+    - -i # use spaces for indents
+    - '4'
+    - -ci # indent switch cases
+    - -sr # redirect operators are followed by space
+    - -bn # binary ops like && or | (pipe) start the line
+  types: [shell]
+
+- id: eslint
+  name: eslint
+  language: node
+  entry: eslint
+  args: [--fix, --cache, --ext, ".ts,.js", --no-ignore]
+  types: [file]
+  files: \.(js|ts)$
