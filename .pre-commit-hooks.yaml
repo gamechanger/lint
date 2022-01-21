@@ -18,13 +18,7 @@
 - id: eslint
   name: eslint
   language: node
-  entry: eslint
-  args:
-    - --fix
-    - --cache
-    - --ext
-    - ".ts,.js"
-    - --no-ignore
+  entry: eslint --fix --cache --ext '.ts,.js' --no-ignore
   types:
     - file
   files: \.(js|ts)$
