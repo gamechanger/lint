@@ -21,7 +21,7 @@
   entry: eslint --fix --cache --ext '.ts,.js' --no-ignore
   types:
     - file
-  files: .(js|ts)$
+  files: \.(js|ts)$
   additional_dependencies:
     - "@typescript-eslint/eslint-plugin@5.10.2" # sync:package.json
     - "@typescript-eslint/parser@5.10.2" # sync:package.json
