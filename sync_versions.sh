@@ -30,4 +30,4 @@ while IFS= read line; do
     else
         echo "$line"
     fi
-done < <(echo "$content")
+done < <(echo "$content" | sed 's/\\/\\\\/g')
