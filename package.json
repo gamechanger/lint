@@ -1,6 +1,6 @@
 {
     "name": "@gamechanger/eslint-plugin",
-    "version": "0.0.4",
+    "version": "0.0.5",
     "description": "GC Lint Rules for TS Projects",
     "author": "GameChanger",
     "license": "MIT",
