@@ -1,6 +1,6 @@
 #! /usr/bin/env sh
 
-HOOKS_FILE=./.pre-commit-hooks.yaml
+HOOKS_FILE=${1:-./.pre-commit-hooks.yaml}
 PACKAGE_FILE=./package.json
 
 # need to fully consume file to allow usage like:
@@ -26,7 +26,7 @@ while IFS= read line; do
                 | grep "\"$package\"" \
                 | cut -d'"' -f 4
         )
-        echo "$line" | sed "s/$version/$version_in_package/g"
+        echo "$line" | sed "s/$(echo $version | sed 's/\^/\\^/g')/$version_in_package/g"
     else
         echo "$line"
     fi
