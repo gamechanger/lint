@@ -60,6 +60,9 @@ module.exports = {
                 'simple-import-sort/imports': 'error',
                 'sort-imports': 'off',
 
+                // no-only-tests
+                'no-only-tests/no-only-tests': 'error',
+
                 // @typescript-eslint
                 '@typescript-eslint/no-empty-interface': 'off',
                 '@typescript-eslint/no-empty-function': 'off',

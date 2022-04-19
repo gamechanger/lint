@@ -6,4 +6,5 @@
     name: sync versions of additional_dependencies in .pre-commit-hooks.yaml
     language: script
     entry: ./sync_versions.sh
+    pass_filenames: false
     files: ^package.json$
