@@ -33,6 +33,7 @@ module.exports = {
                 'object-shorthand': ['error', 'always'],
                 'lines-between-class-members': ['error', 'always', { exceptAfterSingleLine: true }],
                 'no-debugger': 'error',
+                'no-duplicate-imports': ["error", { "includeExports": true }],
 
                 // prettier
                 'prettier/prettier': 'error',
