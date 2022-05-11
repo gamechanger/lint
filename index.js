@@ -33,7 +33,7 @@ module.exports = {
                 'object-shorthand': ['error', 'always'],
                 'lines-between-class-members': ['error', 'always', { exceptAfterSingleLine: true }],
                 'no-debugger': 'error',
-                'no-duplicate-imports': ["error", { "includeExports": true }],
+                "no-duplicate-imports": "off",
 
                 // prettier
                 'prettier/prettier': 'error',
@@ -51,6 +51,7 @@ module.exports = {
                         varsIgnorePattern: '^[_a]',
                     },
                 ],
+                "@typescript-eslint/no-duplicate-imports": ["error", { "includeExports": true }],
 
                 // es
                 'es/no-object-assign': 'error',
