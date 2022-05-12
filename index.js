@@ -12,10 +12,13 @@ module.exports = {
                 'es',
                 'simple-import-sort',
                 'no-only-tests',
+                'import',
                 '@gamechanger',
             ],
             extends: [
-                'plugin:@typescript-eslint/recommended', //
+                'plugin:@typescript-eslint/recommended',
+                'plugin:import/recommended',
+                'plugin:import/typescript',
                 'plugin:prettier/recommended',
                 'prettier',
             ],
@@ -33,7 +36,6 @@ module.exports = {
                 'object-shorthand': ['error', 'always'],
                 'lines-between-class-members': ['error', 'always', { exceptAfterSingleLine: true }],
                 'no-debugger': 'error',
-                'no-duplicate-imports': 'off',
 
                 // prettier
                 'prettier/prettier': 'error',
@@ -51,7 +53,6 @@ module.exports = {
                         varsIgnorePattern: '^[_a]',
                     },
                 ],
-                '@typescript-eslint/no-duplicate-imports': ['error', { includeExports: true }],
 
                 // es
                 'es/no-object-assign': 'error',
@@ -61,6 +62,11 @@ module.exports = {
                 // so disable default sort-imports
                 'simple-import-sort/imports': 'error',
                 'sort-imports': 'off',
+
+                // import plugin rules
+                'import/no-unresolved': 'off',
+                'import/namespace': 'off',
+                'import/export': 'off',
 
                 // no-only-tests
                 'no-only-tests/no-only-tests': 'error',
