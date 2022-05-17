@@ -26,6 +26,7 @@
       - '@typescript-eslint/parser@5.20.0' # sync:package.json
       - 'eslint@8.13.0' # sync:package.json
       - 'eslint-config-prettier@8.5.0' # sync:package.json
+      - 'eslint-plugin-import@2.26.0' # sync:package.json
       - 'eslint-plugin-es@4.1.0' # sync:package.json
       - 'eslint-plugin-no-only-tests@2.6.0' # sync:package.json
       - 'eslint-plugin-prettier@4.0.0' # sync:package.json
