@@ -22,21 +22,15 @@
       - file
   files: \.(js|ts)$
   additional_dependencies:
-      - '@typescript-eslint/eslint-plugin@5.20.0' # sync:package.json
-      - '@typescript-eslint/parser@5.20.0' # sync:package.json
-      - 'eslint@8.13.0' # sync:package.json
-      - 'eslint-config-prettier@8.5.0' # sync:package.json
-      - 'eslint-plugin-import@2.26.0' # sync:package.json
-      - 'eslint-plugin-es@4.1.0' # sync:package.json
-      - 'eslint-plugin-no-only-tests@2.6.0' # sync:package.json
-      - 'eslint-plugin-prettier@4.0.0' # sync:package.json
-      - 'eslint-plugin-simple-import-sort@7.0.0' # sync:package.json
-      - 'import-modules@3.1.0' # sync:package.json
-      - 'prettier@2.6.2' # sync:package.json
-      - 'typescript@4.6.3' # sync:package.json
-
-- id: sync_versions
-  name: sync versions of additional_dependencies in .pre-commit-hooks.yaml
-  language: script
-  entry: ./sync_versions.sh
-  files: ^package.json$
+      - '@typescript-eslint/eslint-plugin@5.20.0' # sync:yarn.lock
+      - '@typescript-eslint/parser@5.20.0' # sync:yarn.lock
+      - 'eslint@8.13.0' # sync:yarn.lock
+      - 'eslint-config-prettier@8.5.0' # sync:yarn.lock
+      - 'eslint-plugin-import@2.26.0' # sync:yarn.lock
+      - 'eslint-plugin-es@4.1.0' # sync:yarn.lock
+      - 'eslint-plugin-no-only-tests@2.6.0' # sync:yarn.lock
+      - 'eslint-plugin-prettier@4.0.0' # sync:yarn.lock
+      - 'eslint-plugin-simple-import-sort@7.0.0' # sync:yarn.lock
+      - 'import-modules@3.1.0' # sync:yarn.lock
+      - 'prettier@2.6.2' # sync:yarn.lock
+      - 'typescript@4.6.3' # sync:yarn.lock
