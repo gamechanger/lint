@@ -813,10 +813,10 @@ import-fresh@^3.0.0, import-fresh@^3.2.1:
     parent-module "^1.0.0"
     resolve-from "^4.0.0"
 
-import-modules@3.1.0:
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/import-modules/-/import-modules-3.1.0.tgz#b3940f9305c40b620098ed0a5287ea49336b1105"
-  integrity sha512-7upd0c06OiUviKhdWreF11adjjoAdWvjCBfd2Uo0HCjxba6V1tsBHkgwBOVJ8DaKY+OPpKFtUDVZN3gbRA4u0Q==
+import-modules@3.2.0:
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/import-modules/-/import-modules-3.2.0.tgz#4acd64b303784b56acef82c348b9f1cdb9d9a95c"
+  integrity sha512-rnImqdZ/8Sopu0IxVo0l5tN3msvVwz794uJLnn+Jb01+FaAHsKrqE78tmE7z9JRZRsefBtBC7h4yphU4RGXR7A==
 
 imurmurhash@^0.1.4:
   version "0.1.4"
