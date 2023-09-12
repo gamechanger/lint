@@ -22,15 +22,15 @@
       - file
   files: \.(js|ts)$
   additional_dependencies:
-      - '@typescript-eslint/eslint-plugin@5.20.0' # sync:yarn.lock
-      - '@typescript-eslint/parser@5.20.0' # sync:yarn.lock
-      - 'eslint@8.13.0' # sync:yarn.lock
-      - 'eslint-config-prettier@8.5.0' # sync:yarn.lock
-      - 'eslint-plugin-import@2.26.0' # sync:yarn.lock
+      - '@typescript-eslint/eslint-plugin@6.7.0' # sync:yarn.lock
+      - '@typescript-eslint/parser@6.7.0' # sync:yarn.lock
+      - 'eslint@8.49.0' # sync:yarn.lock
+      - 'eslint-config-prettier@9.0.0' # sync:yarn.lock
+      - 'eslint-plugin-import@2.28.1' # sync:yarn.lock
       - 'eslint-plugin-es@4.1.0' # sync:yarn.lock
-      - 'eslint-plugin-no-only-tests@2.6.0' # sync:yarn.lock
-      - 'eslint-plugin-prettier@4.0.0' # sync:yarn.lock
-      - 'eslint-plugin-simple-import-sort@7.0.0' # sync:yarn.lock
-      - 'import-modules@3.1.0' # sync:yarn.lock
-      - 'prettier@2.6.2' # sync:yarn.lock
-      - 'typescript@4.6.3' # sync:yarn.lock
+      - 'eslint-plugin-no-only-tests@3.1.0' # sync:yarn.lock
+      - 'eslint-plugin-prettier@5.0.0' # sync:yarn.lock
+      - 'eslint-plugin-simple-import-sort@10.0.0' # sync:yarn.lock
+      - 'import-modules@3.2.0' # sync:yarn.lock
+      - 'prettier@3.0.3' # sync:yarn.lock
+      - 'typescript@5.2.2' # sync:yarn.lock

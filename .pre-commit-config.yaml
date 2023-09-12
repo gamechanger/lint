@@ -1,5 +1,6 @@
 ---
+repos:
 - repo: https://github.com/miki725/pre-commit-sync
-  rev: 0.1.0.a1
+  rev: 0.1.0.a3
   hooks:
       - id: pre-commit-sync
