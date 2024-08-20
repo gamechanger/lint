@@ -1,6 +1,6 @@
 {
     "name": "@gamechanger/eslint-plugin",
-    "version": "0.0.10",
+    "version": "0.0.11",
     "description": "GC Lint Rules for TS Projects",
     "author": "GameChanger",
     "license": "MIT",
@@ -24,7 +24,7 @@
         "eslint-plugin-prettier": "5.0.0",
         "eslint-plugin-simple-import-sort": "10.0.0",
         "import-modules": "3.2.0",
-        "prettier": "3.0.3",
+        "prettier": "3.3.3",
         "typescript": "5.2.2"
     }
 }
