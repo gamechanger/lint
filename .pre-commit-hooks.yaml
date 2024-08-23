@@ -32,5 +32,5 @@
       - 'eslint-plugin-prettier@5.0.0' # sync:yarn.lock
       - 'eslint-plugin-simple-import-sort@10.0.0' # sync:yarn.lock
       - 'import-modules@3.2.0' # sync:yarn.lock
-      - 'prettier@3.0.3' # sync:yarn.lock
+      - 'prettier@3.3.3' # sync:yarn.lock
       - 'typescript@5.2.2' # sync:yarn.lock
