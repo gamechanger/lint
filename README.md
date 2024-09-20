@@ -8,10 +8,6 @@
    b. switch to master branch and `git pull origin master`
    c. create the tag: `git tag vx.x.xx` (replace with your version number)
    d. push your tag: `git push origin vx.x.xx` (replace with your version number)
-   e. In gitlab, naviagte to the lint repo -> code -> tags and verify that your tag appears. This may take a few minutes
+   e. This will trigger the [Publish workflow](https://github.com/gamechanger/lint/actions/workflows/publish.yml) to push the new package.
 4. In Eden, you can now update `@gamechanger/eslint-plugin` with the appropriate version number
 ---
-
-[Lint Repo Gitlab](https://gitlab.com/gc.com/lint)
-
-[Lint Tags](https://gitlab.com/gc.com/lint/-/tags)
