@@ -1,5 +1,6 @@
 const path = require('path');
 const importModules = require('import-modules');
+const noOnlyTest = require('eslint-plugin-no-only-tests');
 
 module.exports = {
     rules: importModules(path.resolve(__dirname, 'rules'), { camelize: false }),
@@ -69,8 +70,12 @@ module.exports = {
                 'import/export': 'off',
 
                 // no-only-tests
-                'no-only-tests/no-only-tests': 'error',
-
+                'no-only-tests/no-only-tests': [
+                    'error', {
+                        // describeApi is from our new route testing helper
+                        'block': ['describeApi'].concat(noOnlyTest.rules['no-only-tests'].meta.schema[0].properties.block.default)
+                    }
+                ],
                 // @typescript-eslint
                 '@typescript-eslint/no-empty-interface': 'off',
                 '@typescript-eslint/no-empty-function': 'off',
