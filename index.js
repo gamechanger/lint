@@ -72,8 +72,8 @@ module.exports = {
                 // no-only-tests
                 'no-only-tests/no-only-tests': [
                     'error', {
-                        // describeApi is from our new route testing helper
-                        'block': ['describeApi'].concat(noOnlyTest.rules['no-only-tests'].meta.schema[0].properties.block.default)
+                        // describeApi and scenario for new route testing helper
+                        'block': ['describeApi', 'scenario'].concat(noOnlyTest.rules['no-only-tests'].meta.schema[0].properties.block.default)
                     }
                 ],
                 // @typescript-eslint
