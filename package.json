@@ -1,17 +1,17 @@
 {
     "name": "@gamechanger/eslint-plugin",
-    "version": "0.0.14",
+    "version": "0.0.15",
     "description": "GC Lint Rules for TS Projects",
-    "author": "GameChanger",
-    "license": "MIT",
     "homepage": "https://github.com/gamechanger/lint",
+    "bugs": {
+        "url": "https://github.com/gamechanger/lint/issues"
+    },
     "repository": {
         "type": "git",
         "url": "https://github.com/gamechanger/lint"
     },
-    "bugs": {
-        "url": "https://github.com/gamechanger/lint/issues"
-    },
+    "license": "MIT",
+    "author": "GameChanger",
     "main": "./index.js",
     "dependencies": {
         "@typescript-eslint/eslint-plugin": "6.7.5",
@@ -21,9 +21,11 @@
         "eslint-plugin-es": "4.1.0",
         "eslint-plugin-import": "2.28.1",
         "eslint-plugin-no-only-tests": "3.1.0",
+        "eslint-plugin-package-json": "0.33.2",
         "eslint-plugin-prettier": "5.0.0",
         "eslint-plugin-simple-import-sort": "10.0.0",
         "import-modules": "3.2.0",
+        "jsonc-eslint-parser": "2.4.0",
         "prettier": "3.3.3",
         "typescript": "5.2.2"
     }
