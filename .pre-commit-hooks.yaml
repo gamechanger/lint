@@ -18,13 +18,14 @@
   name: eslint
   language: node
   entry: eslint --fix --cache --ext '.ts,.js' --no-ignore
+
   types:
       - file
   files: \.(js|ts)$
   additional_dependencies:
-      - '@typescript-eslint/eslint-plugin@6.7.0' # sync:yarn.lock
-      - '@typescript-eslint/parser@6.7.0' # sync:yarn.lock
-      - 'eslint@8.49.0' # sync:yarn.lock
+      - '@typescript-eslint/eslint-plugin@6.7.5' # sync:yarn.lock
+      - '@typescript-eslint/parser@6.7.3' # sync:yarn.lock
+      - 'eslint@8.51.0' # sync:yarn.lock
       - 'eslint-config-prettier@9.0.0' # sync:yarn.lock
       - 'eslint-plugin-import@2.28.1' # sync:yarn.lock
       - 'eslint-plugin-es@4.1.0' # sync:yarn.lock
@@ -32,5 +33,27 @@
       - 'eslint-plugin-prettier@5.0.0' # sync:yarn.lock
       - 'eslint-plugin-simple-import-sort@10.0.0' # sync:yarn.lock
       - 'import-modules@3.2.0' # sync:yarn.lock
+      - 'prettier@3.3.3' # sync:yarn.lock
+      - 'typescript@5.2.2' # sync:yarn.lock
+
+- id: eslint-package-json
+  name: eslint_package_json
+  language: node
+  entry: eslint --cache --fix --no-ignore
+
+  types:
+      - file
+  files: package.json
+  additional_dependencies:
+      - '@typescript-eslint/eslint-plugin@6.7.5' # sync:yarn.lock
+      - '@typescript-eslint/parser@6.7.3' # sync:yarn.lock
+      - 'eslint@8.51.0' # sync:yarn.lock
+      - 'eslint-config-prettier@9.0.0' # sync:yarn.lock
+      - 'eslint-plugin-import@2.28.1' # sync:yarn.lock
+      - 'eslint-plugin-es@4.1.0' # sync:yarn.lock
+      - 'eslint-plugin-package-json@0.33.2' # sync:yarn.lock
+      - 'eslint-plugin-prettier@5.0.0' # sync:yarn.lock
+      - 'import-modules@3.2.0' # sync:yarn.lock
+      - 'jsonc-eslint-parser@2.4.0' # sync:yarn.lock
       - 'prettier@3.3.3' # sync:yarn.lock
       - 'typescript@5.2.2' # sync:yarn.lock
