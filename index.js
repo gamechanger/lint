@@ -97,6 +97,19 @@ module.exports = {
                         '@typescript-eslint/no-var-requires': 'off',
                     },
                 },
+                {
+                    extends: ['plugin:package-json/legacy-recommended'],
+                    files: ['package.json'],
+                    parser: 'jsonc-eslint-parser',
+                    rules: {
+                        'package-json/restrict-dependency-ranges': [
+                            'error',
+                            {
+                                rangeType: 'pin',
+                            },
+                        ],
+                    },
+                },
             ],
         },
     },
