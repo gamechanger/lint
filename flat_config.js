@@ -12,7 +12,6 @@ module.exports = defineConfig([
         plugins: {
             es: fixupPluginRules(require('eslint-plugin-es')),
             'simple-import-sort': require('eslint-plugin-simple-import-sort'),
-            // '@typescript-eslint': require('@typescript-eslint/eslint-plugin'),
             'no-only-tests': noOnlyTest,
             prettier: require('eslint-plugin-prettier'),
             '@gamechanger': {
