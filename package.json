@@ -1,6 +1,6 @@
 {
     "name": "@gamechanger/eslint-plugin",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "GC Lint Rules for TS Projects",
     "homepage": "https://github.com/gamechanger/lint",
     "bugs": {
@@ -16,6 +16,7 @@
     "dependencies": {
         "@typescript-eslint/eslint-plugin": "8.40.0",
         "@typescript-eslint/parser": "8.40.0",
+        "typescript-eslint": "8.40.0",
         "eslint": "9.33.0",
         "eslint-config-prettier": "9.0.0",
         "eslint-plugin-es": "4.1.0",
