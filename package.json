@@ -1,6 +1,6 @@
 {
     "name": "@gamechanger/eslint-plugin",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "GC Lint Rules for TS Projects",
     "homepage": "https://github.com/gamechanger/lint",
     "bugs": {
