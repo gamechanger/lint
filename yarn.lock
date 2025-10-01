@@ -745,10 +745,10 @@ eslint-plugin-no-only-tests@3.3.0:
   resolved "https://registry.yarnpkg.com/eslint-plugin-no-only-tests/-/eslint-plugin-no-only-tests-3.3.0.tgz#d9d42ccd4b5d099b4872fb5046cf95441188cfb5"
   integrity sha512-brcKcxGnISN2CcVhXJ/kEQlNa0MEfGRtwKtWA16SkqXHKitaKIMrfemJKLKX1YqDU5C/5JY3PvZXd5jEW04e0Q==
 
-eslint-plugin-package-json@0.56.2:
-  version "0.56.2"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-package-json/-/eslint-plugin-package-json-0.56.2.tgz#9d0910f6911ace40ba8f01195e1a12f13f17f212"
-  integrity sha512-0LUN3SMNRHOTVaDCvm00lxmqxrliWvDep0Ecjruz+nvsg/ruea3eNUGHR1c/HUVd9n0aSrIdKdmleY/4nwqItQ==
+eslint-plugin-package-json@0.56.3:
+  version "0.56.3"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-package-json/-/eslint-plugin-package-json-0.56.3.tgz#dcf50aaf3a3bc377396d3df72bb63819b02e8d73"
+  integrity sha512-ArN3wnOAsduM/6a0egB83DQQfF/4KzxE53U8qcvELCXT929TnBy2IeCli4+in3QSHxcVYSIDa2Y5T2vVAXbe6A==
   dependencies:
     "@altano/repository-tools" "^2.0.1"
     change-case "^5.4.4"
