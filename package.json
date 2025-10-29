@@ -1,6 +1,6 @@
 {
     "name": "@gamechanger/eslint-plugin",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "description": "GC Lint Rules for TS Projects",
     "homepage": "https://github.com/gamechanger/lint",
     "bugs": {
@@ -9,6 +9,9 @@
     "repository": {
         "type": "git",
         "url": "https://github.com/gamechanger/lint"
+    },
+    "publishConfig": {
+        "registry": "https://npm.pkg.github.com"
     },
     "license": "MIT",
     "author": "GameChanger",
