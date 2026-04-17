@@ -14,7 +14,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Stale Branches
-      uses: gamechanger/stale-branches@f09051a0164b595cfa02a4fadbc27ee47499ee10 #v3.0.0
+      uses: gamechanger/stale-branches@v8
       with:
         repo-token: '${{ secrets.GITHUB_TOKEN }}'
         days-before-stale: 45
