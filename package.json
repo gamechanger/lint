@@ -1,6 +1,6 @@
 {
     "name": "@gamechanger/eslint-plugin",
-    "version": "1.0.4",
+    "version": "2.0.0",
     "description": "GC Lint Rules for TS Projects",
     "homepage": "https://github.com/gamechanger/lint",
     "bugs": {
@@ -17,22 +17,21 @@
     "author": "GameChanger",
     "main": "./index.js",
     "dependencies": {
-        "@eslint/compat": "1.4.0",
-        "@typescript-eslint/eslint-plugin": "8.45.0",
-        "@typescript-eslint/parser": "8.45.0",
-        "eslint": "9.36.0",
+        "@eslint/compat": "2.1.0",
+        "@typescript-eslint/eslint-plugin": "8.62.1",
+        "@typescript-eslint/parser": "8.62.1",
+        "eslint": "10.6.0",
         "eslint-config-prettier": "10.1.8",
         "eslint-plugin-es": "4.1.0",
-        "eslint-plugin-import": "2.32.0",
-        "eslint-plugin-no-only-tests": "3.3.0",
-        "eslint-plugin-package-json": "0.56.3",
-        "eslint-plugin-prettier": "5.5.4",
-        "eslint-plugin-simple-import-sort": "12.1.1",
+        "eslint-plugin-no-only-tests": "3.4.0",
+        "eslint-plugin-package-json": "1.5.0",
+        "eslint-plugin-prettier": "5.5.6",
+        "eslint-plugin-simple-import-sort": "13.0.0",
         "import-modules": "3.2.0",
-        "jsonc-eslint-parser": "2.4.1",
-        "prettier": "3.6.2",
+        "jsonc-eslint-parser": "3.1.0",
+        "prettier": "3.9.4",
         "typescript": "5.9.3",
-        "typescript-eslint": "8.45.0"
+        "typescript-eslint": "8.62.1"
     },
     "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
 }
