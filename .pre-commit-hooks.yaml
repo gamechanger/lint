@@ -24,8 +24,8 @@
   files: \.(js|ts)$
   additional_dependencies:
       - '@eslint/compat@2.1.0' # sync:yarn.lock
-      - '@typescript-eslint/eslint-plugin@8.63.0' # sync:yarn.lock
-      - '@typescript-eslint/parser@8.63.0' # sync:yarn.lock
+      - '@typescript-eslint/eslint-plugin@8.62.1' # sync:yarn.lock
+      - '@typescript-eslint/parser@8.62.1' # sync:yarn.lock
       - 'eslint@10.6.0' # sync:yarn.lock
       - 'eslint-config-prettier@10.1.8' # sync:yarn.lock
       - 'eslint-plugin-es@4.1.0' # sync:yarn.lock
@@ -35,7 +35,7 @@
       - 'eslint-plugin-simple-import-sort@13.0.0' # sync:yarn.lock
       - 'import-modules@3.2.0' # sync:yarn.lock
       - 'jsonc-eslint-parser@3.1.0' # sync:yarn.lock
-      - 'typescript-eslint@8.63.0' # sync:yarn.lock
+      - 'typescript-eslint@8.62.1' # sync:yarn.lock
       - 'prettier@3.9.4' # sync:yarn.lock
       - 'typescript@5.9.3' # sync:yarn.lock
 
@@ -49,8 +49,8 @@
   files: package.json
   additional_dependencies:
       - '@eslint/compat@2.1.0' # sync:yarn.lock
-      - '@typescript-eslint/eslint-plugin@8.63.0' # sync:yarn.lock
-      - '@typescript-eslint/parser@8.63.0' # sync:yarn.lock
+      - '@typescript-eslint/eslint-plugin@8.62.1' # sync:yarn.lock
+      - '@typescript-eslint/parser@8.62.1' # sync:yarn.lock
       - 'eslint@10.6.0' # sync:yarn.lock
       - 'eslint-config-prettier@10.1.8' # sync:yarn.lock
       - 'eslint-plugin-es@4.1.0' # sync:yarn.lock
@@ -60,6 +60,6 @@
       - 'eslint-plugin-simple-import-sort@13.0.0' # sync:yarn.lock
       - 'import-modules@3.2.0' # sync:yarn.lock
       - 'jsonc-eslint-parser@3.1.0' # sync:yarn.lock
-      - 'typescript-eslint@8.63.0' # sync:yarn.lock
+      - 'typescript-eslint@8.62.1' # sync:yarn.lock
       - 'prettier@3.9.4' # sync:yarn.lock
       - 'typescript@5.9.3' # sync:yarn.lock
