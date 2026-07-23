@@ -4,6 +4,7 @@ const path = require('path');
 const importModules = require('import-modules');
 
 const noOnlyTest = require('eslint-plugin-no-only-tests');
+const prettierRecommended = require('eslint-plugin-prettier/recommended');
 
 module.exports = defineConfig([
     require('typescript-eslint').configs.recommended,
@@ -11,7 +12,6 @@ module.exports = defineConfig([
         plugins: {
             'simple-import-sort': require('eslint-plugin-simple-import-sort'),
             'no-only-tests': noOnlyTest,
-            prettier: require('eslint-plugin-prettier'),
             '@gamechanger': {
                 rules: importModules(path.resolve(__dirname, 'rules'), { camelize: false }),
             },
@@ -24,9 +24,6 @@ module.exports = defineConfig([
             'object-shorthand': ['error', 'always'],
             'lines-between-class-members': ['error', 'always', { exceptAfterSingleLine: true }],
             'no-debugger': 'error',
-
-            // prettier
-            'prettier/prettier': 'error',
 
             // simple-import-sort (replaces core sort-imports for TS)
             'simple-import-sort/imports': 'error',
@@ -59,6 +56,11 @@ module.exports = defineConfig([
             '@gamechanger/capitalize-star-imports': 'error',
         },
     },
+    // Registers the `prettier` plugin, sets `prettier/prettier: error`, and (via eslint-config-prettier)
+    // turns off core/stylistic rules that conflict with Prettier. Placed AFTER the main block so those
+    // opt-outs win, and BEFORE the `.js` block so `.js` keeps `prettier/prettier: off`.
+    // NOTE: this also turns OFF `arrow-body-style` and `prefer-arrow-callback` (known prettier autofix conflicts).
+    prettierRecommended,
     {
         files: ['**/*.js'],
         rules: {
