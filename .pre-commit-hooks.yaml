@@ -17,35 +17,11 @@
 - id: eslint
   name: eslint
   language: node
-  entry: eslint --fix --cache --ext '.ts,.js' --no-ignore
+  entry: eslint --fix --cache --no-ignore
 
   types:
       - file
-  files: \.(js|ts)$
-  additional_dependencies:
-      - '@stylistic/eslint-plugin@5.10.0' # sync:yarn.lock
-      - '@typescript-eslint/eslint-plugin@8.63.0' # sync:yarn.lock
-      - '@typescript-eslint/parser@8.63.0' # sync:yarn.lock
-      - 'eslint@10.6.0' # sync:yarn.lock
-      - 'eslint-config-prettier@10.1.8' # sync:yarn.lock
-      - 'eslint-plugin-no-only-tests@3.4.0' # sync:yarn.lock
-      - 'eslint-plugin-package-json@1.5.0' # sync:yarn.lock
-      - 'eslint-plugin-prettier@5.5.6' # sync:yarn.lock
-      - 'eslint-plugin-simple-import-sort@13.0.0' # sync:yarn.lock
-      - 'import-modules@3.2.0' # sync:yarn.lock
-      - 'jsonc-eslint-parser@3.1.0' # sync:yarn.lock
-      - 'typescript-eslint@8.63.0' # sync:yarn.lock
-      - 'prettier@3.9.4' # sync:yarn.lock
-      - 'typescript@6.0.3' # sync:yarn.lock
-
-- id: eslint-package-json
-  name: eslint_package_json
-  language: node
-  entry: eslint --cache --fix --no-ignore
-
-  types:
-      - file
-  files: package.json
+  files: (\.(js|ts)$|(^|/)package\.json$)
   additional_dependencies:
       - '@stylistic/eslint-plugin@5.10.0' # sync:yarn.lock
       - '@typescript-eslint/eslint-plugin@8.63.0' # sync:yarn.lock
