@@ -73,7 +73,7 @@ module.exports = defineConfig([
         },
     },
     {
-        files: ['package.json'],
+        files: ['**/package.json'],
         languageOptions: {
             parser: require('jsonc-eslint-parser'),
         },
