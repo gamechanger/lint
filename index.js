@@ -12,18 +12,20 @@ module.exports = defineConfig([
         plugins: {
             'simple-import-sort': require('eslint-plugin-simple-import-sort'),
             'no-only-tests': noOnlyTest,
+            '@stylistic': require('@stylistic/eslint-plugin'),
             '@gamechanger': {
                 rules: importModules(path.resolve(__dirname, 'rules'), { camelize: false }),
             },
         },
         rules: {
             // core ESLint — typescript-eslint/recommended does NOT pull in eslint:recommended,
-            // so each of these is doing real work.
-            'array-element-newline': ['error', 'consistent'],
-            'arrow-body-style': ['error', 'as-needed'],
+            // so these are doing real work.
             'object-shorthand': ['error', 'always'],
-            'lines-between-class-members': ['error', 'always', { exceptAfterSingleLine: true }],
             'no-debugger': 'error',
+
+            // @stylistic — layout rules Prettier does not cover. New home for the deprecated core
+            // `lines-between-class-members`; config-prettier leaves this one on, so it stays active.
+            '@stylistic/lines-between-class-members': ['error', 'always', { exceptAfterSingleLine: true }],
 
             // simple-import-sort (replaces core sort-imports for TS)
             'simple-import-sort/imports': 'error',

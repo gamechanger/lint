@@ -23,6 +23,7 @@
       - file
   files: \.(js|ts)$
   additional_dependencies:
+      - '@stylistic/eslint-plugin@5.10.0' # sync:yarn.lock
       - '@typescript-eslint/eslint-plugin@8.63.0' # sync:yarn.lock
       - '@typescript-eslint/parser@8.63.0' # sync:yarn.lock
       - 'eslint@10.6.0' # sync:yarn.lock
@@ -46,6 +47,7 @@
       - file
   files: package.json
   additional_dependencies:
+      - '@stylistic/eslint-plugin@5.10.0' # sync:yarn.lock
       - '@typescript-eslint/eslint-plugin@8.63.0' # sync:yarn.lock
       - '@typescript-eslint/parser@8.63.0' # sync:yarn.lock
       - 'eslint@10.6.0' # sync:yarn.lock
