@@ -64,7 +64,7 @@ module.exports = defineConfig([
     // NOTE: this also turns OFF `arrow-body-style` and `prefer-arrow-callback` (known prettier autofix conflicts).
     prettierRecommended,
     {
-        files: ['**/*.js', '**/*.cjs'],
+        files: ['**/*.js'],
         rules: {
             // this plugin cant sort require() hence fallback to default sort
             'simple-import-sort/imports': 'off',
