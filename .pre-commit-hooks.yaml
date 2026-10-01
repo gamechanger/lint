@@ -21,7 +21,7 @@
 
   types:
       - file
-  files: (\.(m?js|ts)$|(^|/)package\.json$)
+  files: (\.(js|mjs|ts)$|(^|/)package\.json$)
   additional_dependencies:
       - '@stylistic/eslint-plugin@5.10.0' # sync:yarn.lock
       - '@typescript-eslint/eslint-plugin@8.63.0' # sync:yarn.lock
