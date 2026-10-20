@@ -107,12 +107,7 @@
   resolved "https://registry.yarnpkg.com/@types/esrecurse/-/esrecurse-4.3.1.tgz#6f636af962fbe6191b830bd676ba5986926bccec"
   integrity sha512-xJBAbDifo5hpffDBuHl0Y8ywswbiAp/Wi7Y/GtAgSlZyIABppyurxVueOPE8LUQOxdlgi6Zqce7uoEpqNTeiUw==
 
-"@types/estree@^1.0.6":
-  version "1.0.8"
-  resolved "https://registry.yarnpkg.com/@types/estree/-/estree-1.0.8.tgz#958b91c991b1867ced318bedea0e215ee050726e"
-  integrity sha512-dWHzHa2WqEXI/O1E9OjrocMTKJl2mSrEolh1Iomrv6U+JuNwaHXsXx9bLu5gG7BUWFIN0skIQJQ/L1rIex4X6w==
-
-"@types/estree@^1.0.8":
+"@types/estree@^1.0.0", "@types/estree@^1.0.6", "@types/estree@^1.0.8":
   version "1.0.9"
   resolved "https://registry.yarnpkg.com/@types/estree/-/estree-1.0.9.tgz#cf3f0e876d7bee15a93ab925b82bf570a3904a24"
   integrity sha512-GhdPgy1el4/ImP05X05Uw4cw2/M93BCUmnEvWZNStlCzEKME4Fkk+YpoA5OiHNQmoS7Cafb8Xa3Pya8m1Qrzeg==
@@ -323,10 +318,10 @@ eslint-config-prettier@10.1.8:
   resolved "https://registry.yarnpkg.com/eslint-config-prettier/-/eslint-config-prettier-10.1.8.tgz#15734ce4af8c2778cc32f0b01b37b0b5cd1ecb97"
   integrity sha512-82GZUjRS0p/jganf6q1rEO25VSoHH0hKPCTrgillPjdI/3bgBhAE1QzHrHTizjpRvy6pGAvKjDJtk2pF9NDq8w==
 
-eslint-fix-utils@~0.4.1:
-  version "0.4.2"
-  resolved "https://registry.yarnpkg.com/eslint-fix-utils/-/eslint-fix-utils-0.4.2.tgz#d7c034480fe1a537ff84f340a1970c977daade71"
-  integrity sha512-n7ZTcwwkP5scedlhvWMcqxED+O1NzXcj5Rxn/0kJQMP88k02vRcBfQ1qsk/JHb6Aw8bajFoetFCCBiNIcNCsvA==
+eslint-fix-utils@~0.4.3:
+  version "0.4.4"
+  resolved "https://registry.yarnpkg.com/eslint-fix-utils/-/eslint-fix-utils-0.4.4.tgz#afa806c05a1a086cd7085393f20acf5303aeeb0f"
+  integrity sha512-9reP0fw++eZv0qs0ji8U1G9a+j8yWQW1RT8Wrlw32JlhQJDiweVX98kyDrJq6G7jdOLgKwmj0nPghyMadsOgHQ==
 
 eslint-json-compat-utils@^0.2.3:
   version "0.2.3"
@@ -340,19 +335,20 @@ eslint-plugin-no-only-tests@3.4.0:
   resolved "https://registry.yarnpkg.com/eslint-plugin-no-only-tests/-/eslint-plugin-no-only-tests-3.4.0.tgz#a457d2c559bda3301ce5a75147b8ba447186e88a"
   integrity sha512-4S3/9Nb7A2tiMcpzEQE9bQSlpeOz6WJkgryBuou/SA8W2x2c8Zf4j0NvTKBjv6qNhF9T79tmkecm/0CHqV0UGg==
 
-eslint-plugin-package-json@1.5.0:
-  version "1.5.0"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-package-json/-/eslint-plugin-package-json-1.5.0.tgz#9e5889703b3815147dcafd5c65a31acac42bebed"
-  integrity sha512-KQkAdn+7I4vn1W4Va+V8M94RhcgZBvgrxMglDqgEhJgQDRUJ9RdtrEiHoe/84oVTIlp0jiPttLYwkExdvHYhZQ==
+eslint-plugin-package-json@1.10.1:
+  version "1.10.1"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-package-json/-/eslint-plugin-package-json-1.10.1.tgz#24f1f52d06a692f7018d036413f096f2f68f81cf"
+  integrity sha512-H/NhssfjCi0PjypHab8R1bM2NPn9FASn/MBrVf8+CmykFM+wg9Wz4XgWgtHRpbXtm3R4S5nJv0HXYeucpPRJpA==
   dependencies:
     "@altano/repository-tools" "^2.0.1"
+    "@types/estree" "^1.0.0"
     change-case "^5.4.4"
     detect-indent "^7.0.2"
     detect-newline "^4.0.1"
-    eslint-fix-utils "~0.4.1"
+    eslint-fix-utils "~0.4.3"
     eslint-json-compat-utils "^0.2.3"
     jsonc-eslint-parser "^3.1.0"
-    package-json-validator "^1.5.0"
+    package-json-validator "^1.6.0"
     semver "^7.7.3"
     sort-object-keys "^2.0.0"
     sort-package-json "^4.0.0"
@@ -691,10 +687,10 @@ p-locate@^5.0.0:
   dependencies:
     p-limit "^3.0.2"
 
-package-json-validator@^1.5.0:
-  version "1.5.2"
-  resolved "https://registry.yarnpkg.com/package-json-validator/-/package-json-validator-1.5.2.tgz#64af7af0d67f16c02430f2a6dac13a00718b2192"
-  integrity sha512-eHXskJQU4aCiSfjhRfTVtCJ+22/EzLHgYgZv5Gj3teb3NJrnTMzq5BnKAWKvR+PLpknCO1PmOCImDuO+dX4Vaw==
+package-json-validator@^1.6.0:
+  version "1.6.1"
+  resolved "https://registry.yarnpkg.com/package-json-validator/-/package-json-validator-1.6.1.tgz#d63ceb7514f9427fc154c78b055c13b9f34a8acf"
+  integrity sha512-eyl3DGFoxdUO0RA1Ym+H11S6P2XWIlA6Sy2PbvslbwFJ14kkz+FgX1Br3MaebrvLY3Q10Iih3PsL3741vsevrA==
   dependencies:
     npm-package-arg "^13.0.2"
     semver "^7.7.2"
@@ -743,12 +739,7 @@ punycode@^2.1.0:
   resolved "https://registry.yarnpkg.com/punycode/-/punycode-2.3.1.tgz#027422e2faec0b25e1549c3e1bd8309b9133b6e5"
   integrity sha512-vYt7UD1U9Wg6138shLtLOvdAu+8DsC/ilFtEVHcH+wydcSpNE20AfSOduf6MkRFahL5FY7X1oU7nKVZFtfq8Fg==
 
-semver@^7.3.5:
-  version "7.7.2"
-  resolved "https://registry.yarnpkg.com/semver/-/semver-7.7.2.tgz#67d99fdcd35cec21e6f8b87a7fd515a33f982b58"
-  integrity sha512-RF0Fw+rO5AMf9MAyaRXI4AV0Ulj5lMHqVxxdSgiVbixSCXoEmmX/jk0CuJw4+3SqroYO9VoUh+HcuJivvtJemA==
-
-semver@^7.7.2, semver@^7.7.3:
+semver@^7.3.5, semver@^7.7.2, semver@^7.7.3:
   version "7.8.5"
   resolved "https://registry.yarnpkg.com/semver/-/semver-7.8.5.tgz#39b646037dd50c14fb451e7e4cac58ed8b863f69"
   integrity sha512-Y7/KDsb8LjooZpwaqGyulO6DQlksgCncchHGk+sZIY4SBvUocMBEFH5Ur1fI4dV+Jvl0w6cjvucaIi40puRioA==
